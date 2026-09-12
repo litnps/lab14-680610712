@@ -80,7 +80,11 @@ export default function ModalRegister( {onClose} : {onClose:()=>void}) {
     }
     ,0);
 
-    return total + extraTotal;
+    total += extraTotal;
+
+    if(form.extraItems.length === extraItems.length) total *= 0.8;
+
+    return total;
   };
 
   const registerBtnOnClick = () => {
