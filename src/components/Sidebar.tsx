@@ -12,12 +12,11 @@ export default function Sidebar() {
           <h3 className="navbar-brand">Marathon App</h3>
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to={"/"}>
+              <Link className="nav-link" aria-current="page" to={"/"}>
                 <BsBox2HeartFill />
                 <span className="d-md-inline px-2">Home</span>
               </Link>
             </li>
-            {/* STEP 8 : ลิงก์ไปหน้า Dashboard */}
             <li className="nav-item">
               <Link className="nav-link" to={"/dashboard"}>
                 <BsPeopleFill />
